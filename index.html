@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-ed   ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrolling.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+    <title>Patrick Warren Portfolio</title>
+    <style>
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content h1 span {
+            color: #3d79ff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="Background Video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="nav">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project Showcase</a>
+            <a href="#sdg14">SDG 14</a>
+            <a href="#contact">CONTACT</a>
+            
+        </div>
+    </div>
+
+    <div class="content" id="home">
+        <h1>HI,<br> I’m <span>Patrick Warren</span></h1>
+        <div class="avatar"></div>
+    </div>
+
+    <section id="skills" class="skills">
+        <div class="skill-content">
+            <div class="section-heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="container">
+                <div class="barWrapper">
+                    <span class="progressText">HTML</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <h3>90%</h3>
+                </div>
+    
+                <div class="barWrapper">
+                    <span class="progressText">JAVASCRIPT</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <h3>85%</h3>
+                </div>
+    
+                <div class="barWrapper">
+                    <span class="progressText">CSS</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 97%;"></div>
+                    </div>
+                    <h3>97%</h3>
+                </div>
+
+                <div class="barWrapper">
+                    <span class="progressText">CHINESE GARTER</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <h3>90%</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project">
+            <h1>PROJECT SHOWCASE</h1>
+            <div class="project-image">
+                <img src="Image2.jpg" alt="Marine Plastic Tracker">
+            </div>
+            <div class="project-description">
+                <p>
+                    <strong>Marine Plastic Tracker</strong> is an advanced monitoring system designed to detect, track, and analyze plastic pollution in marine ecosystems. Utilizing cutting-edge technologies such as satellite imagery, GPS, remote sensing, and artificial intelligence, this tool enables precise identification and mapping of plastic debris across oceans, rivers, and coastal regions.
+                </p>
+                <p>
+                    By collecting real-time data on the location, distribution, and movement of marine plastic, the tracker provides valuable insights that support targeted cleanup efforts and inform mitigation strategies. The tracker serves as a critical resource for environmental organizations, researchers, and policymakers by offering comprehensive data on plastic waste concentrations, enabling evidence-based decision-making and the development of effective policies to combat ocean pollution.
+                </p>
+                <p>
+                    Additionally, some Marine Plastic Trackers leverage crowd-sourced data or deploy specialized devices in high-risk zones, further enhancing global efforts to address the pervasive issue of marine plastic pollution.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sdg14">
+        <h2>SDG 14: Life Below Water</h2>
+        <p>SDG 14 Project aims to enhance capacities of regional fisheries stakeholders to promote actions for achieving SDG 14 in the Pacific Island Countries. Fisheries Agency, JICA, and USP implement the practical project activities on sustainable management of marine resources at the community level. Then, the good practices will be exchanged and applied among Pacific Island countries through south-south cooperation.</p>
+    </section>
+
+    <!-- Contact Section Start -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="row">
+                <!-- Left Section -->
+                <div class="contact-left">
+                    <h2>Connect With Me</h2>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/profile.php?id=100080842842483&mibextid=kFxxJD" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Fwarrenxzz%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR11em-LBxEAe_wrlA9A0AHlWTaH1Sj-GvlQ1FpN2rXsSkTp9bezLh5BjHo_aem_smn_qgEVCBMqYgVX9nwkeA&h=AT18YMclcmV51ilj7sagt-9uZsi08wxqapJ6F1jwDI3hL7SggMmKMdAmuTOU42DOMRV8PZ6lJtr4GJq-Jq-OTCKO3-qQF_I2C9Y_G9tUdNdjM2m7np2QLVuYma8URcYCJuu1PJSEQqB-WR2y" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40patrick.warren.mo%3F_t%3D8sBrEOhLF3A%26_r%3D1%26fbclid%3DIwZXh0bgNhZW0CMTAAAR0u2KVbw6gin233PwZ0U91kuwvxFsTn5F-KjoCQW0BmD6yS1M3T95p0QY4_aem_BX2CejSmLX9WhfyEQEYdVg&h=AT3HcWu-xfB_a5vppPUMAh1a2uMQEB0U9Y7Meudze638fmBXMewVbJDu0K7lWDZV4E9kUkeVs38G-RC03frfpqob1trdb4WFWZ-uwb-hj5UJzL5WcCarxiPyPSZ0VSSeIOzHIw" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Right Section -->
+                <div class="col-md-6 contact-right">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+<footer style="background-color: #001f3f; color: #ffffff; text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+    <p>Copyright © <strong>Patrick</strong>, 2024</p>
+    <p>"All rights reserved."</p>
+  </footer>
+</body>
+</html>
